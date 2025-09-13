@@ -1,1 +1,2 @@
 hydra -t 5 -V -f -l anne -P /usr/share/seclists/Passwords/Leaked-Databases/rockyou.txt  192.168.0.105 ssh ( brute force password ssh neu da biet username) 
+openssl s_client -connect 192.168.0.102:443 -showcerts ( ssl checker)
