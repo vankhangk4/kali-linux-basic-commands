@@ -30,5 +30,6 @@ https://search.censys.io/
 https://www.crunchbase.com/
 https://www.semrush.com/
 hunter.io
+theHarvester -d kali.org -l 500 -b yahoo 
 
 
