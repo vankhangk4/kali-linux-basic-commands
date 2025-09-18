@@ -27,6 +27,7 @@ python3 -c 'import pty; pty.spawn("/bin/bash")'
 nmap --interactive -> !sh
 
 gobuster dir -u http://172.16.86.153 -w /usr/share/seclists/Discovery/Web-Content/directory-list-2.3-medium.txt  -x php,bak,txt,html -t 60
+nikto -h http://192.168.0.106:8080  
 
 exiftool .cypher-neo.png ( lay info cua anh) 
 linpeas.sh ( tu dong thu thap thong tin ve muc tieu nhu la cac lo hong)
